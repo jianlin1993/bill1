@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.bill1.mapper.BillMapper">
+   <resultMap id="BillList" type="com.demo.bill1.domain.Bill" >
+      <result column="JRN_NO" property="jrnNo" />
+      <result column="TX_TYP" property="txTyp" />
+      <result column="REMARK" property="remark" />
+      <result column="TX_AMT" property="txAmt" />
+      <result column="TX_DT" property="txDt" />
+   </resultMap>
+
+   <select id="getBill" resultType="com.demo.bill1.domain.Bill">
+      SELECT * FROM bill WHERE jrn_no = #{jrnNo}
+   </select>
+
+   <select id="getAll" resultMap="BillList">
+      SELECT * FROM bill
+   </select>
+</mapper>
