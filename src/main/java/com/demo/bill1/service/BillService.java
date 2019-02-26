@@ -16,6 +16,7 @@ public class BillService {
     private BillMapper billMapper;
 
     public List<Bill> getAll(){
+        //修改一下提交试试
         List<Bill> list=new ArrayList<>();
         list=billMapper.getAll();
         return list;
