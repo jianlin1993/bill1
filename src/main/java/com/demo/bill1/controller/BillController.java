@@ -18,6 +18,7 @@ import java.util.List;
 @Controller
 @EnableAutoConfiguration
 @RequestMapping("bill")
+//bill控制器
 public class BillController {
 
     @Autowired
