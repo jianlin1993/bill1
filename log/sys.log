@@ -1,0 +1,97 @@
+2019-03-28 10:44:49,570 INFO (StartupInfoLogger.java:50)- Starting Bill1Application on DESKTOP-URFP5U3 with PID 11988 (D:\Program\IntelIDEWorkspace\bill1\target\classes started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-28 10:44:49,576 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-28 10:44:50,660 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-03-28 10:44:50,672 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-28 10:44:50,679 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-03-28 10:44:50,679 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-28 10:44:50,685 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program\jdk1.8\bin;D:\Program\jdk1.8\jre\bin;D:\Program\OpenVPN\bin;D:\Program\SVN\bin;D:\Program\apache-maven-3.2.3\bin;D:\Program\mysql-5.7.25-winx64\bin;C:\Users\Rain\AppData\Local\Microsoft\WindowsApps;;D:\Program\IntelliJ IDEA 2018.3\bin;;.]
+2019-03-28 10:44:50,788 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-03-28 10:44:50,788 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1174 ms
+2019-03-28 10:44:50,839 INFO (DynamicRegistrationBean.java:111)- Servlet statViewServlet was not registered (possibly already registered?)
+2019-03-28 10:44:50,841 INFO (DynamicRegistrationBean.java:111)- Filter webStatFilter was not registered (possibly already registered?)
+2019-03-28 10:44:50,854 INFO (LoginFilter.java:24)- 创建过滤器
+2019-03-28 10:44:51,320 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-28 10:44:51,469 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-28 10:44:51,581 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-03-28 10:44:51,600 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-28 10:44:51,603 INFO (StartupInfoLogger.java:59)- Started Bill1Application in 2.479 seconds (JVM running for 3.436)
+2019-03-28 10:45:04,411 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-28 10:45:04,412 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-03-28 10:45:04,417 INFO (FrameworkServlet.java:546)- Completed initialization in 5 ms
+2019-03-28 10:45:04,426 INFO (LoginFilter.java:19)- 过滤器
+2019-03-28 10:45:04,439 INFO (BillController.java:34)- 进入控制器
+2019-03-28 10:45:04,755 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2019-03-28 10:45:04,771 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM bill 
+2019-03-28 10:45:04,784 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-03-28 10:45:04,804 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 61
+2019-03-28 10:45:13,186 INFO (LoginFilter.java:19)- 过滤器
+2019-03-28 10:46:06,965 INFO (StartupInfoLogger.java:50)- Starting Bill1Application on DESKTOP-URFP5U3 with PID 10708 (D:\Program\IntelIDEWorkspace\bill1\target\classes started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-28 10:46:06,967 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-28 10:46:07,917 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-03-28 10:46:07,927 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-28 10:46:07,933 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-03-28 10:46:07,934 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-28 10:46:07,938 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program\jdk1.8\bin;D:\Program\jdk1.8\jre\bin;D:\Program\OpenVPN\bin;D:\Program\SVN\bin;D:\Program\apache-maven-3.2.3\bin;D:\Program\mysql-5.7.25-winx64\bin;C:\Users\Rain\AppData\Local\Microsoft\WindowsApps;;D:\Program\IntelliJ IDEA 2018.3\bin;;.]
+2019-03-28 10:46:08,034 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-03-28 10:46:08,035 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1032 ms
+2019-03-28 10:46:08,080 INFO (DynamicRegistrationBean.java:111)- Servlet statViewServlet was not registered (possibly already registered?)
+2019-03-28 10:46:08,082 INFO (DynamicRegistrationBean.java:111)- Filter webStatFilter was not registered (possibly already registered?)
+2019-03-28 10:46:08,093 INFO (LoginFilter.java:24)- 创建过滤器
+2019-03-28 10:46:08,520 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-28 10:46:08,614 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-28 10:46:08,691 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-03-28 10:46:08,709 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-28 10:46:08,712 INFO (StartupInfoLogger.java:59)- Started Bill1Application in 2.121 seconds (JVM running for 2.806)
+2019-03-28 10:46:14,814 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-28 10:46:14,815 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-03-28 10:46:14,819 INFO (FrameworkServlet.java:546)- Completed initialization in 4 ms
+2019-03-28 10:46:14,827 INFO (LoginFilter.java:19)- 过滤器
+2019-03-28 10:46:15,077 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2019-03-28 10:47:55,412 INFO (StartupInfoLogger.java:50)- Starting Bill1Application on DESKTOP-URFP5U3 with PID 15800 (D:\Program\IntelIDEWorkspace\bill1\target\classes started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-28 10:47:55,415 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-28 10:47:56,469 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-03-28 10:47:56,481 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-28 10:47:56,489 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-03-28 10:47:56,489 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-28 10:47:56,494 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program\jdk1.8\bin;D:\Program\jdk1.8\jre\bin;D:\Program\OpenVPN\bin;D:\Program\SVN\bin;D:\Program\apache-maven-3.2.3\bin;D:\Program\mysql-5.7.25-winx64\bin;C:\Users\Rain\AppData\Local\Microsoft\WindowsApps;;D:\Program\IntelliJ IDEA 2018.3\bin;;.]
+2019-03-28 10:47:56,595 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-03-28 10:47:56,596 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1145 ms
+2019-03-28 10:47:56,645 INFO (DynamicRegistrationBean.java:111)- Servlet statViewServlet was not registered (possibly already registered?)
+2019-03-28 10:47:56,648 INFO (DynamicRegistrationBean.java:111)- Filter webStatFilter was not registered (possibly already registered?)
+2019-03-28 10:47:56,660 INFO (LoginFilter.java:24)- 创建过滤器
+2019-03-28 10:47:57,071 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-28 10:47:57,160 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-28 10:47:57,244 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-03-28 10:47:57,264 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-28 10:47:57,267 INFO (StartupInfoLogger.java:59)- Started Bill1Application in 2.227 seconds (JVM running for 2.91)
+2019-03-28 10:48:02,443 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-28 10:48:02,443 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-03-28 10:48:02,449 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2019-03-28 10:48:02,457 INFO (LoginFilter.java:19)- 过滤器
+2019-03-28 10:48:02,714 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2019-03-28 10:53:25,838 INFO (StartupInfoLogger.java:50)- Starting Bill1Application on DESKTOP-URFP5U3 with PID 16320 (D:\Program\IntelIDEWorkspace\bill1\target\classes started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-28 10:53:25,841 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-28 10:53:26,757 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-03-28 10:53:26,768 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-28 10:53:26,777 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-03-28 10:53:26,778 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-28 10:53:26,783 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program\jdk1.8\bin;D:\Program\jdk1.8\jre\bin;D:\Program\OpenVPN\bin;D:\Program\SVN\bin;D:\Program\apache-maven-3.2.3\bin;D:\Program\mysql-5.7.25-winx64\bin;C:\Users\Rain\AppData\Local\Microsoft\WindowsApps;;D:\Program\IntelliJ IDEA 2018.3\bin;;.]
+2019-03-28 10:53:26,880 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-03-28 10:53:26,881 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1005 ms
+2019-03-28 10:53:26,925 INFO (DynamicRegistrationBean.java:111)- Servlet statViewServlet was not registered (possibly already registered?)
+2019-03-28 10:53:26,928 INFO (DynamicRegistrationBean.java:111)- Filter webStatFilter was not registered (possibly already registered?)
+2019-03-28 10:53:26,939 INFO (LoginFilter.java:24)- 创建过滤器
+2019-03-28 10:53:27,333 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-28 10:53:27,425 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-28 10:53:27,505 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-03-28 10:53:27,523 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-28 10:53:27,526 INFO (StartupInfoLogger.java:59)- Started Bill1Application in 2.043 seconds (JVM running for 2.738)
+2019-03-28 10:53:39,482 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-28 10:53:39,483 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-03-28 10:53:39,488 INFO (FrameworkServlet.java:546)- Completed initialization in 5 ms
+2019-03-28 10:53:39,495 INFO (LoginFilter.java:19)- 过滤器
+2019-03-28 10:53:39,508 INFO (BillController.java:34)- 进入控制器
+2019-03-28 10:53:39,746 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2019-03-28 10:53:39,761 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM bill 
+2019-03-28 10:53:39,775 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-03-28 10:53:39,791 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 61

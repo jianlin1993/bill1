@@ -1,0 +1,355 @@
+2019-03-27 11:36:26,224 INFO (StartupInfoLogger.java:50)- Starting Bill1ApplicationTests on DESKTOP-URFP5U3 with PID 11388 (started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-27 11:36:26,230 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-27 11:36:28,393 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 11:36:28,636 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-27 11:36:28,881 INFO (StartupInfoLogger.java:59)- Started Bill1ApplicationTests in 3.148 seconds (JVM running for 4.252)
+2019-03-27 11:36:29,080 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-27 11:39:49,644 INFO (StartupInfoLogger.java:50)- Starting Bill1ApplicationTests on DESKTOP-URFP5U3 with PID 18000 (started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-27 11:39:49,645 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-27 11:39:51,588 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 11:39:51,825 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-27 11:39:52,083 INFO (StartupInfoLogger.java:59)- Started Bill1ApplicationTests in 2.921 seconds (JVM running for 3.732)
+2019-03-27 11:39:52,255 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-27 11:40:13,865 INFO (StartupInfoLogger.java:50)- Starting Bill1Application on DESKTOP-URFP5U3 with PID 16216 (D:\Program\IntelIDEWorkspace\bill1\target\classes started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-27 11:40:13,868 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-27 11:40:14,802 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-03-27 11:40:14,813 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-27 11:40:14,822 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-03-27 11:40:14,822 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-27 11:40:14,827 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program\jdk1.8\bin;D:\Program\jdk1.8\jre\bin;D:\Program\OpenVPN\bin;D:\Program\SVN\bin;D:\Program\apache-maven-3.2.3\bin;D:\Program\mysql-5.7.25-winx64\bin;C:\Users\Rain\AppData\Local\Microsoft\WindowsApps;;D:\Program\IntelliJ IDEA 2018.3\bin;;.]
+2019-03-27 11:40:14,924 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-03-27 11:40:14,924 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1026 ms
+2019-03-27 11:40:14,952 INFO (DynamicRegistrationBean.java:111)- Servlet statViewServlet was not registered (possibly already registered?)
+2019-03-27 11:40:14,955 INFO (DynamicRegistrationBean.java:111)- Filter webStatFilter was not registered (possibly already registered?)
+2019-03-27 11:40:15,367 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 11:40:15,455 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-27 11:40:15,535 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-03-27 11:40:15,555 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-27 11:40:15,558 INFO (StartupInfoLogger.java:59)- Started Bill1Application in 2.036 seconds (JVM running for 2.743)
+2019-03-27 11:40:22,195 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-27 11:40:22,195 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-03-27 11:40:22,200 INFO (FrameworkServlet.java:546)- Completed initialization in 4 ms
+2019-03-27 11:40:27,194 INFO (BillController.java:34)- 进入控制器
+2019-03-27 11:40:27,450 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2019-03-27 11:40:27,465 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM bill 
+2019-03-27 11:40:27,478 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-03-27 11:40:27,489 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 61
+2019-03-27 11:40:27,669 ERROR (TemplateEngine.java:1136)- [THYMELEAF][http-nio-8080-exec-3] Exception processing template "billList": An error happened during template parsing (template: "class path resource [templates/billList.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/billList.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "bill.jrnNo" (template: "billList" - line 36, col 17)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 55 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "bill.jrnNo" (template: "billList" - line 36, col 17)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 57 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'jrnNo' cannot be found on object of type 'com.demo.bill1.domain.Bill' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:90)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:109)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:328)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 82 common frames omitted
+2019-03-27 11:40:27,671 ERROR (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/billList.html]")] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'jrnNo' cannot be found on object of type 'com.demo.bill1.domain.Bill' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:90)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:109)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:328)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-27 11:41:52,517 INFO (StartupInfoLogger.java:50)- Starting Bill1Application on DESKTOP-URFP5U3 with PID 10624 (D:\Program\IntelIDEWorkspace\bill1\target\classes started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-27 11:41:52,521 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-27 11:41:53,448 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-03-27 11:41:53,459 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-27 11:41:53,466 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-03-27 11:41:53,466 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-27 11:41:53,470 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program\jdk1.8\bin;D:\Program\jdk1.8\jre\bin;D:\Program\OpenVPN\bin;D:\Program\SVN\bin;D:\Program\apache-maven-3.2.3\bin;D:\Program\mysql-5.7.25-winx64\bin;C:\Users\Rain\AppData\Local\Microsoft\WindowsApps;;D:\Program\IntelliJ IDEA 2018.3\bin;;.]
+2019-03-27 11:41:53,565 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-03-27 11:41:53,566 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1010 ms
+2019-03-27 11:41:53,594 INFO (DynamicRegistrationBean.java:111)- Servlet statViewServlet was not registered (possibly already registered?)
+2019-03-27 11:41:53,596 INFO (DynamicRegistrationBean.java:111)- Filter webStatFilter was not registered (possibly already registered?)
+2019-03-27 11:41:54,003 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 11:41:54,093 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-27 11:41:54,170 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-03-27 11:41:54,189 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-27 11:41:54,191 INFO (StartupInfoLogger.java:59)- Started Bill1Application in 2.005 seconds (JVM running for 2.697)
+2019-03-27 11:41:58,023 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-27 11:41:58,025 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-03-27 11:41:58,030 INFO (FrameworkServlet.java:546)- Completed initialization in 4 ms
+2019-03-27 11:41:58,049 INFO (BillController.java:34)- 进入控制器
+2019-03-27 11:41:58,287 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2019-03-27 11:41:58,303 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM bill 
+2019-03-27 11:41:58,317 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-03-27 11:41:58,331 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 61
+2019-03-27 15:09:42,906 INFO (StartupInfoLogger.java:50)- Starting Bill1Application on DESKTOP-URFP5U3 with PID 22152 (D:\Program\IntelIDEWorkspace\bill1\target\classes started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-27 15:09:42,909 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-27 15:09:43,854 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-03-27 15:09:43,865 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-27 15:09:43,872 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-03-27 15:09:43,873 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-27 15:09:43,877 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program\jdk1.8\bin;D:\Program\jdk1.8\jre\bin;D:\Program\OpenVPN\bin;D:\Program\SVN\bin;D:\Program\apache-maven-3.2.3\bin;D:\Program\mysql-5.7.25-winx64\bin;C:\Users\Rain\AppData\Local\Microsoft\WindowsApps;;D:\Program\IntelliJ IDEA 2018.3\bin;;.]
+2019-03-27 15:09:43,973 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-03-27 15:09:43,974 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1033 ms
+2019-03-27 15:09:44,003 INFO (DynamicRegistrationBean.java:111)- Servlet statViewServlet was not registered (possibly already registered?)
+2019-03-27 15:09:44,005 INFO (DynamicRegistrationBean.java:111)- Filter webStatFilter was not registered (possibly already registered?)
+2019-03-27 15:09:44,429 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 15:09:44,536 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-27 15:09:44,632 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-03-27 15:09:44,652 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-27 15:09:44,655 INFO (StartupInfoLogger.java:59)- Started Bill1Application in 2.142 seconds (JVM running for 2.853)
+2019-03-27 15:09:56,255 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-27 15:09:56,255 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-03-27 15:09:56,260 INFO (FrameworkServlet.java:546)- Completed initialization in 4 ms
+2019-03-27 15:09:56,280 INFO (BillController.java:34)- 进入控制器
+2019-03-27 15:09:56,520 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2019-03-27 15:09:56,535 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM bill 
+2019-03-27 15:09:56,548 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-03-27 15:09:56,560 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 61
+2019-03-27 15:09:56,799 INFO (BillController.java:34)- 进入控制器
+2019-03-27 15:09:56,800 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM bill 
+2019-03-27 15:09:56,801 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-03-27 15:09:56,805 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 61
+2019-03-27 15:11:59,082 INFO (StartupInfoLogger.java:50)- Starting Bill1Application on DESKTOP-URFP5U3 with PID 18216 (D:\Program\IntelIDEWorkspace\bill1\target\classes started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-27 15:11:59,085 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-27 15:12:00,101 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-03-27 15:12:00,117 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-27 15:12:00,126 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-03-27 15:12:00,126 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-27 15:12:00,132 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program\jdk1.8\bin;D:\Program\jdk1.8\jre\bin;D:\Program\OpenVPN\bin;D:\Program\SVN\bin;D:\Program\apache-maven-3.2.3\bin;D:\Program\mysql-5.7.25-winx64\bin;C:\Users\Rain\AppData\Local\Microsoft\WindowsApps;;D:\Program\IntelliJ IDEA 2018.3\bin;;.]
+2019-03-27 15:12:00,237 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-03-27 15:12:00,237 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1115 ms
+2019-03-27 15:12:00,270 INFO (DynamicRegistrationBean.java:111)- Servlet statViewServlet was not registered (possibly already registered?)
+2019-03-27 15:12:00,272 INFO (DynamicRegistrationBean.java:111)- Filter webStatFilter was not registered (possibly already registered?)
+2019-03-27 15:12:00,716 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 15:12:00,811 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-27 15:12:00,890 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-03-27 15:12:00,909 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-27 15:12:00,911 INFO (StartupInfoLogger.java:59)- Started Bill1Application in 2.171 seconds (JVM running for 2.868)
+2019-03-27 15:12:07,288 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-27 15:12:07,289 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-03-27 15:12:07,296 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2019-03-27 15:12:07,314 INFO (BillController.java:34)- 进入控制器
+2019-03-27 15:12:07,556 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2019-03-27 15:12:07,572 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM bill 
+2019-03-27 15:12:07,585 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-03-27 15:12:07,599 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 61
+2019-03-27 15:12:33,756 INFO (StartupInfoLogger.java:50)- Starting Bill1Application on DESKTOP-URFP5U3 with PID 21312 (D:\Program\IntelIDEWorkspace\bill1\target\classes started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-27 15:12:33,758 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-27 15:12:34,698 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-03-27 15:12:34,708 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-27 15:12:34,715 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-03-27 15:12:34,716 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-27 15:12:34,720 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program\jdk1.8\bin;D:\Program\jdk1.8\jre\bin;D:\Program\OpenVPN\bin;D:\Program\SVN\bin;D:\Program\apache-maven-3.2.3\bin;D:\Program\mysql-5.7.25-winx64\bin;C:\Users\Rain\AppData\Local\Microsoft\WindowsApps;;D:\Program\IntelliJ IDEA 2018.3\bin;;.]
+2019-03-27 15:12:34,821 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-03-27 15:12:34,822 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1029 ms
+2019-03-27 15:12:34,852 INFO (DynamicRegistrationBean.java:111)- Servlet statViewServlet was not registered (possibly already registered?)
+2019-03-27 15:12:34,855 INFO (DynamicRegistrationBean.java:111)- Filter webStatFilter was not registered (possibly already registered?)
+2019-03-27 15:12:35,283 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 15:12:35,372 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-27 15:12:35,447 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-03-27 15:12:35,466 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-27 15:12:35,469 INFO (StartupInfoLogger.java:59)- Started Bill1Application in 2.075 seconds (JVM running for 2.757)
+2019-03-27 15:12:48,249 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-27 15:12:48,250 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-03-27 15:12:48,255 INFO (FrameworkServlet.java:546)- Completed initialization in 5 ms
+2019-03-27 15:12:48,273 INFO (BillController.java:34)- 进入控制器
+2019-03-27 15:12:48,508 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2019-03-27 15:12:48,524 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM bill 
+2019-03-27 15:12:48,539 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-03-27 15:12:48,551 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 61
+2019-03-27 15:18:04,625 INFO (StartupInfoLogger.java:50)- Starting Bill1Application on DESKTOP-URFP5U3 with PID 20756 (D:\Program\IntelIDEWorkspace\bill1\target\classes started by Rain in D:\Program\IntelIDEWorkspace\bill1)
+2019-03-27 15:18:04,627 INFO (SpringApplication.java:679)- The following profiles are active: druid
+2019-03-27 15:18:05,619 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-03-27 15:18:05,629 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-27 15:18:05,635 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-03-27 15:18:05,636 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-27 15:18:05,641 INFO (DirectJDKLog.java:173)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program\jdk1.8\bin;D:\Program\jdk1.8\jre\bin;D:\Program\OpenVPN\bin;D:\Program\SVN\bin;D:\Program\apache-maven-3.2.3\bin;D:\Program\mysql-5.7.25-winx64\bin;C:\Users\Rain\AppData\Local\Microsoft\WindowsApps;;D:\Program\IntelliJ IDEA 2018.3\bin;;.]
+2019-03-27 15:18:05,739 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-03-27 15:18:05,740 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1080 ms
+2019-03-27 15:18:05,783 INFO (DynamicRegistrationBean.java:111)- Servlet statViewServlet was not registered (possibly already registered?)
+2019-03-27 15:18:05,785 INFO (DynamicRegistrationBean.java:111)- Filter webStatFilter was not registered (possibly already registered?)
+2019-03-27 15:18:05,796 INFO (LoginFilter.java:24)- 创建过滤器
+2019-03-27 15:18:06,219 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 15:18:06,309 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-03-27 15:18:06,384 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-03-27 15:18:06,403 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-27 15:18:06,406 INFO (StartupInfoLogger.java:59)- Started Bill1Application in 2.117 seconds (JVM running for 2.825)
+2019-03-27 15:18:15,125 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-27 15:18:15,125 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-03-27 15:18:15,130 INFO (FrameworkServlet.java:546)- Completed initialization in 5 ms
+2019-03-27 15:18:15,139 INFO (LoginFilter.java:19)- 过滤器
+2019-03-27 15:18:15,150 INFO (BillController.java:34)- 进入控制器
+2019-03-27 15:18:15,398 INFO (DruidDataSource.java:930)- {dataSource-1} inited
+2019-03-27 15:18:15,420 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM bill 
+2019-03-27 15:18:15,435 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-03-27 15:18:15,448 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 61

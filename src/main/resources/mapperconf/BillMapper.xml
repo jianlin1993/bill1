@@ -2,18 +2,81 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.demo.bill1.mapper.BillMapper">
    <resultMap id="BillList" type="com.demo.bill1.domain.Bill" >
-      <result column="JRN_NO" property="jrnNo" />
-      <result column="TX_TYP" property="txTyp" />
-      <result column="REMARK" property="remark" />
-      <result column="TX_AMT" property="txAmt" />
-      <result column="TX_DT" property="txDt" />
+      <result column="TX_TYP" property="txTyp" jdbcType="VARCHAR"/>
+      <result column="REMARK" property="remark" jdbcType="VARCHAR"/>
+      <result column="NO" property="no" jdbcType="NUMERIC"/>
    </resultMap>
-
-   <select id="getBill" resultType="com.demo.bill1.domain.Bill">
-      SELECT * FROM bill WHERE jrn_no = #{jrnNo}
+   <!-- ${}方式}-->
+   <select id="sfByNo" parameterType="String" resultMap="BillList">
+      SELECT * FROM bill  order by ${no}
+   </select>
+   <!-- #{}方式}-->
+   <select id="sfByTxTyp" parameterType="com.demo.bill1.domain.Bill" resultMap="BillList" >
+      SELECT * FROM bill  where TX_TYP=#{txTyp}
    </select>
 
    <select id="getAll" resultMap="BillList">
       SELECT * FROM bill
    </select>
+
+
+   <!-- 插入单条记录-->
+   <insert id="add" parameterType="com.demo.bill1.domain.Bill" >
+      insert into bill(NO,TX_TYP,REMARK) values(#{no},#{txTyp},#{remark})
+   </insert>
+   <!--一次插入多条记录  将所有信息插入bill表里面，传入参数为list,通过<foreach>来遍历list-->
+   <insert id="mulAdd" parameterType="java.util.ArrayList">
+      insert into bill (TX_TYP,REMARK,NO) VALUES
+      <foreach collection="list" item="bill"  separator=",">
+         (#{bill.txTyp},#{bill.remark},#{bill.no})
+      </foreach>
+   </insert>
+
+   <!--一次插入多条记录  将所有信息插入bill表里面，传入参数为list,通过<foreach>来遍历list-->
+   <insert id="mulAdd2" parameterType="java.util.ArrayList">
+      insert into bill (TX_TYP,REMARK,NO) VALUES
+      <foreach collection="list" item="bill"  separator=",">
+         (#{bill.txTyp},#{bill.remark},#{bill.no})
+      </foreach>
+   </insert>
+
+   <!--对应的mapper 此处必须设置useGeneratedKeys=false才能批量插入成功-->
+   <insert id="mulAddOracle" parameterType="java.util.ArrayList" useGeneratedKeys="false">
+      insert into bill (TX_TYP,REMARK,NO)
+      <foreach collection="list" item="bill"  separator="UNION ALL">
+         (SELECT #{bill.txTyp},#{bill.remark},#{bill.no} from dual)
+      </foreach>
+   </insert>
+   <!-- 第二种-->
+   <insert id="mulAddOracle2" parameterType="java.util.ArrayList" useGeneratedKeys="false">
+      insert ALL
+      <foreach collection="list" item="bill" >
+         into bill (TX_TYP,REMARK,NO) values
+         (#{bill.txTyp},#{bill.remark},#{bill.no})
+      </foreach>
+      select 1 from dual
+   </insert>
+
+
+   <!-- 更新记录-->
+   <update id="upt" parameterType="com.demo.bill1.domain.Bill">
+      update bill set REMARK=#{remark} where NO=${no}
+   </update>
+   <!-- 更新记录-->
+   <update id="upt2" parameterType="com.demo.bill1.domain.Bill">
+      update bill set REMARK=#{remark} where NO=#{no}
+   </update>
+
+   <!-- 删除记录-->
+   <delete id="del" parameterType="com.demo.bill1.domain.Bill">
+      delete from bill where TX_TYP=#{txTyp}
+   </delete>
+
+
+
+
+
+
+
+
 </mapper>

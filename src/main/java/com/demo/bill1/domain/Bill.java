@@ -1,20 +1,23 @@
 package com.demo.bill1.domain;
 
 public class Bill {
-   private  String jrnNo;
    private String txTyp;
    private String txDt;
    private Long txAmt;
    private String remark;
    private String user;
+   private int no;
 
-    public String getJrnNo() {
-        return jrnNo;
+    public int getNo() {
+        return no;
     }
 
-    public void setJrnNo(String jrnNo) {
-        this.jrnNo = jrnNo;
+    public void setNo(int no) {
+        this.no = no;
     }
+
+
+
 
     public String getTxTyp() {
         return txTyp;
@@ -56,7 +59,7 @@ public class Bill {
         this.user = user;
     }
     public void clean(){
-        setJrnNo(null);
+        setNo(0);
         setRemark(null);
         setTxAmt(null);
         setTxDt(null);
