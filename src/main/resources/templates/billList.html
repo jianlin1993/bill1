@@ -24,20 +24,24 @@
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>流水号</th>
-            <th>类型</th>
-            <th>金额</th>
+            <th>用户</th>
+            <th>支出/收入类型</th>
+            <th>支出/收入渠道</th>
             <th>时间</th>
+            <th>金额</th>
             <th>备注</th>
+            <th>操作</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="bill,billStat : ${list}">
-            <td th:text="${bill.no}"></td>
+            <td th:text="${bill.usrNo}"></td>
             <td th:text="${bill.txTyp}"></td>
-            <td th:text="${bill.txAmt}"></td>
+            <td th:text="${bill.cnlNo}"></td>
             <td th:text="${bill.txDt}"></td>
+            <td th:text="${bill.txAmt}"></td>
             <td th:text="${bill.remark}"></td>
+            <td><button id="btn">详情</button></td>
         </tr>
         </tbody>
     </table>
@@ -54,4 +58,11 @@
     </nav>
 </div>
 </body>
+<script>
+    $(function(){
+        $('#btn').click(function(){
+            window.showModalDialog('/billDetail.html')
+        });
+    })
+</script>
 </html>
