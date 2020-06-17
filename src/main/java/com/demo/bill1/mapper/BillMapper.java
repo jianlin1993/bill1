@@ -15,8 +15,11 @@ public interface BillMapper {
 
     //使用#{}方式
     List<Bill> sfByTxTyp(Bill bill);
-    //使用${}方式时，要想传入一个字符串作为参数，必须加上@Param注解
-    List<Bill> sfByNo(@Param("no")String no);
+    List<Bill> selectLike(Bill bill);
+
+    List<Bill> sfBill(Bill bill);
+
+    Bill sfByNo(int no);
     //单条插入
     int add(Bill bill);
     //多条插入

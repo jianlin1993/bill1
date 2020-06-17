@@ -1,13 +1,20 @@
 package com.demo.bill1.domain;
 
-public class Bill {
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Repository;
+
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+@Repository
+public class Bill implements java.io.Serializable{
    private String txTyp;
    private String txDt;
-   private Long txAmt;
-   private String remark;
-   private String user;
-   private int no;
+   private Double txAmt;
+    private String remark;
+    private int usrNo;
+    private int cnlNo;
 
+    private int no;
     public int getNo() {
         return no;
     }
@@ -16,6 +23,24 @@ public class Bill {
         this.no = no;
     }
 
+
+
+
+    public int getUsrNo() {
+        return usrNo;
+    }
+
+    public void setUsrNo(int usrNo) {
+        this.usrNo = usrNo;
+    }
+
+    public int getCnlNo() {
+        return cnlNo;
+    }
+
+    public void setCnlNo(int cnlNo) {
+        this.cnlNo = cnlNo;
+    }
 
 
 
@@ -35,11 +60,11 @@ public class Bill {
         this.txDt = txDt;
     }
 
-    public Long getTxAmt() {
+    public Double getTxAmt() {
         return txAmt;
     }
 
-    public void setTxAmt(Long txAmt) {
+    public void setTxAmt(Double txAmt) {
         this.txAmt = txAmt;
     }
 
@@ -51,19 +76,8 @@ public class Bill {
         this.remark = remark;
     }
 
-    public String getUser() {
-        return user;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
-    }
-    public void clean(){
-        setNo(0);
-        setRemark(null);
-        setTxAmt(null);
-        setTxDt(null);
-        setTxTyp(null);
-        setUser(null);
+    @Override
+    public String toString(){
+        return "序号："+no+" 用户编号："+usrNo+" 渠道编号："+cnlNo+" 金额："+txAmt+" 日期："+txDt+" 交易类型："+txTyp +" 备注："+remark;
     }
 }

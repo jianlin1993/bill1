@@ -1,9 +1,12 @@
 package com.demo.bill1;
 
 import com.demo.bill1.domain.Bill;
+import com.demo.bill1.domain.User;
 import com.demo.bill1.mapper.BillMapper;
+import com.demo.bill1.mapper.UserMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -11,9 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -22,9 +23,96 @@ public class Bill1ApplicationTests {
 
     @Resource
     private BillMapper billMapper;
+    @Resource
+    private UserMapper userMapper;
+    @Resource
+    private Bill bill;
+
+    @Resource
+    private User user;
+
+
+    @Test
+    public void testCash(){
+        Map<String,Object> map=new HashMap<>();
+        map.put("no",2);
+        map.put("userName","王建林");
+        userMapper.sfUserByParMap(map);
+
+
+    }
+
+
+
+    @Test
+    public void addUser() {
+        user.setUserName("测试");
+        user.setPassWord("666");
+        int no=userMapper.addUser(user);
+        System.out.println(no + " "+user.getNo());
+    }
+
+    @Test
+    public void sfUser2(){
+        List<HashMap<String,Object>> list=new ArrayList<>();
+        list=userMapper.sfUser2();
+        for(HashMap<String, Object> m : list) {
+            for (String key : m.keySet()) {
+                System.out.println("Key = " + key + ", Value = " + m.get(key));
+            }
+        }
+    }
+    @Test
+    public void sfUserBill(){
+        List<HashMap<String,Object>> list=new ArrayList<>();
+        list=userMapper.sfUserBill();
+        for(HashMap<String, Object> m : list) {
+            for (String key : m.keySet()) {
+                System.out.println("Key = " + key + ", Value = " + m.get(key));
+//                if("user".equals(key)){
+//                    User user=(User)m.get(key);
+//                    System.out.println(user.toString());
+//                }
+//                if("bill".equals(key)){
+//                    Bill bill=(Bill)m.get(key);
+//                    System.out.println(bill.toString());
+//                }
+            }
+        }
+    }
+
+
+
+    @Test   //测试分表 根据参数查询不同的表
+    public void sfByTable(){
+        List<HashMap<String,Object>> list=new ArrayList<>();
+        String tableName="usr";
+        list=userMapper.sfByTable(tableName);
+        for(HashMap<String, Object> m : list) {
+            for (String key : m.keySet()) {
+                System.out.println("Key = " + key + ", Value = " + m.get(key));
+            }
+        }
+    }
+
+    @Test
+   public void sfByNo(){
+        user=userMapper.sfByNo(1);
+        System.out.println(user.getNo());
+   }
 
     @Test
     public void contextLoads() {
+    }
+    @Test
+    public void sf(){
+//        List<HashMap<String,Object>> list=new ArrayList<>();
+//        list=userMapper.sf();
+//        for(HashMap<String, Object> m : list) {
+//            for (String key : m.keySet()) {
+//                System.out.println("Key = " + key + ", Value = " + m.get(key));
+//            }
+//        }
     }
 
     @Test
@@ -34,6 +122,29 @@ public class Bill1ApplicationTests {
         billMapper.getAll();
 
     }
+
+    @Test
+    public void sfBill(){
+        List<Bill> list=new ArrayList<>();
+        bill.setUsrNo(1);
+        //bill.setTxTyp("1");
+        list=billMapper.sfBill(bill);
+        for(Bill m : list) {
+            System.out.println(m);
+        }
+
+    }
+    @Test
+    public void selectLike(){
+        List<Bill> list=new ArrayList<>();
+        bill.setRemark("支出");
+        //bill.setTxTyp("1");
+        list=billMapper.selectLike(bill);
+        for(Bill m : list) {
+            System.out.println(m);
+        }
+    }
+
 
     @Test
     public void add(){
@@ -48,7 +159,6 @@ public class Bill1ApplicationTests {
         Bill bill=new Bill();
         bill.setTxTyp("1");
         bill.setRemark("#{}方式");
-        bill.setNo(16);
         System.out.println(billMapper.upt(bill));
     }
 
@@ -58,7 +168,6 @@ public class Bill1ApplicationTests {
         Bill bill=new Bill();
         bill.setTxTyp("1");
         bill.setRemark("${}方式");
-        bill.setNo(16);
         System.out.println(billMapper.upt2(bill));
     }
 
@@ -99,7 +208,6 @@ public class Bill1ApplicationTests {
         Bill bill3=new Bill();
         bill3.setTxTyp("1");
         bill3.setRemark("bill3");
-        bill3.setNo(16);
         list.add(bill1);
         list.add(bill2);
         list.add(bill3);
@@ -119,7 +227,6 @@ public class Bill1ApplicationTests {
         Bill bill3=new Bill();
         bill3.setTxTyp("1");
         bill3.setRemark("bill3");
-        bill3.setNo(16);
         list.add(bill1);
         list.add(bill2);
         list.add(bill3);
@@ -138,7 +245,6 @@ public class Bill1ApplicationTests {
         Bill bill3=new Bill();
         bill3.setTxTyp("1");
         bill3.setRemark("bill3");
-        bill3.setNo(16);
         list.add(bill1);
         list.add(bill2);
         list.add(bill3);
@@ -146,12 +252,12 @@ public class Bill1ApplicationTests {
     }
 
 
-    @Test
-    public void sfByNo(){
-        Bill bill=new Bill();
-        String no="no";
-        System.out.println(billMapper.sfByNo(no));
-    }
+//    @Test
+//    public void sfByNo(){
+//        Bill bill=new Bill();
+//        String no="no";
+//        System.out.println(billMapper.sfByNo(no));
+//    }
 
     @Test
     public void sfByTxTyp(){

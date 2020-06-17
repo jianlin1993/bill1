@@ -11,6 +11,7 @@
     <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="/js/Jquery_md5.js"></script>
     <style>
         body {
             background-image: url("/image/paper.gif");
@@ -39,14 +40,17 @@
                     <h3 style="text-align: center;color: darkolivegreen; font-size: 35px;">账单系统</h3>
                 </div>
                 <form>
-                <div class="form-group">
-                    <input name="username" id="username" class="form-control uname" placeholder="请输入您的用户名">
-                </div>
+                    <div class="form-group">
+                        <input name="username" id="username" class="form-control uname" placeholder="请输入您的用户名">
+                    </div>
 
-                <div style="padding: 1px" class="form-group">
-                    <input name="password" id="password" type="password" class="form-control pword m-b"
-                           placeholder="请输入您的密码">
-                </div>
+                    <div style="padding: 1px" class="form-group">
+                        <input id="password" type="password" class="form-control pword m-b"
+                               placeholder="请输入您的密码">
+                    </div>
+                    <div style="padding: 1px" class="form-group">
+                        <input  id="pswd_md5" type="hidden" class="form-control pword m-b">
+                    </div>
                 </form>
                 <div class="form-group">
                     <button style="border-radius:8px; background-color: #00A3FF" id="login"
@@ -62,7 +66,7 @@
 <script>
     $('#login').click(function () {
         var username = $("#username").val();
-        var password = $("#password").val();
+        var password = $.md5($("#password").val());
         if ($.trim(username) == "" || $.trim(password) == "") {
             alert("用户名或密码不能为空！");
             return;
@@ -73,8 +77,7 @@
             data: {username: username, password: password},
             dataType: "json",
             success: function (data) {
-                if (data) {
-                    alert("Denglu");
+                if (data.toString().toLowerCase() == "true") {
                     window.location.href = "index";
                 } else {
                     alert("用户名或密码错误，请重新登陆！");

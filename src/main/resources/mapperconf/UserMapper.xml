@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.bill1.mapper.UserMapper">
+    <cache/>
+    <resultMap id="User" type="com.demo.bill1.domain.User">
+        <id column="USR_NO" property="no"/>
+        <result column="USR_NM" property="userName"/>
+        <result column="PASSWORD" property="passWord"/>
+    </resultMap>
+    <resultMap id="BillList" type="com.demo.bill1.domain.Bill">
+        <result column="TX_TYP" property="txTyp" jdbcType="VARCHAR"/>
+        <result column="TX_DT" property="txDt" jdbcType="VARCHAR"/>
+        <result column="TX_AMT" property="txAmt" jdbcType="DOUBLE"/>
+        <result column="REMARK" property="remark" jdbcType="VARCHAR"/>
+        <result column="USR_NO" property="usrNo" jdbcType="NUMERIC"/>
+        <result column="CNL_NO" property="cnlNo" jdbcType="NUMERIC"/>
+        <result column="NO" property="no" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <resultMap id="UserBill" type="hashmap">
+        <association property="user" column="USR_NO" javaType="User" resultMap="User"/>
+        <association property="bill" column="NO" javaType="Bill" resultMap="BillList"/>
+    </resultMap>
+
+    <select id="sfUserBill" resultMap="UserBill">
+        SELECT *
+        FROM usr A
+                 left join bill B on A.USR_NO = B.USR_NO
+    </select>
+
+    <select id="sfByTable" resultType="hashmap" parameterType="String">
+        SELECT *
+        FROM ${TABLE_NM}
+    </select>
+
+    <select id="sfUserByParMap" resultType="hashmap" parameterMap="getUserCountMap">
+        SELECT *
+        FROM USR
+        where USR_NO = #{no}
+          and USR_NM = #{userName}
+    </select>
+    <parameterMap type="java.util.Map" id="getUserCountMap">
+        <parameter property="no" mode="IN" jdbcType="INTEGER"/>
+        <parameter property="userName" mode="OUT" jdbcType="VARCHAR"/>
+    </parameterMap>
+
+    <!--<resultMap id="UserBill2" type="hashmap" >-->
+    <!--<association property="user" column="USR_NO" javaType="User" resultMap="User"/>-->
+    <!--<discriminator javaType="int" column="USR_NO">-->
+    <!--<case value="1" resultMap="ZhiChu" />-->
+    <!--<case value="2" resultMap="ShouRu" />-->
+    <!--</discriminator>-->
+    <!--</resultMap>-->
+
+    <!--<resultMap id="ZhiChu" type="hashmap" >-->
+    <!--<collection  property="billList"  javaType="ArrayList" select="sfZhiChu"/>-->
+    <!--</resultMap>-->
+    <!--<resultMap id="ShouRu" type="hashmap" >-->
+    <!--<collection  property="billList"  javaType="ArrayList" select="sfShouRu"/>-->
+    <!--</resultMap>-->
+    <!--<select id="sfZhiChu" resultMap="BillList">-->
+    <!--select * from bill where TX_TYP='1'-->
+    <!--</select>-->
+    <!--<select id="sfShouRu" resultMap="BillList">-->
+    <!--select * from bill where TX_TYP='2'-->
+    <!--</select>-->
+
+
+    <!--<select id="sfUserBillAss" resultMap="UserBillAss">-->
+    <!--SELECT * FROM usr A-->
+    <!--left join bill B on A.USR_NO=B.USR_NO-->
+    <!--</select>-->
+
+    <resultMap id="User2" type="hashmap">
+        <id column="USR_NO" property="no"/>
+        <result column="USR_NM" property="userName"/>
+        <result column="PASSWORD" property="passWord"/>
+    </resultMap>
+
+
+    <!--//sfUser2-->
+    <select id="sfUser2" resultMap="User2">
+        SELECT *
+        FROM usr
+    </select>
+
+
+    <select id="login" resultType="String">
+        SELECT 1
+        FROM usr
+        where USR_NM = #{userName}
+          and PASSWORD = #{passWord}
+    </select>
+
+    <select id="sf" resultType="hashmap">
+        SELECT *
+        FROM usr
+    </select>
+
+    <select id="sfByNo" resultMap="User" parameterType="int">
+        SELECT *
+        FROM usr
+        where USR_NO = #{no}
+    </select>
+
+    <insert id="addUser" useGeneratedKeys="true" keyProperty="no" parameterType="com.demo.bill1.domain.User">
+        insert into usr(USR_NM, PASSWORD)
+        values (#{userName}, #{passWord})
+    </insert>
+
+    <insert id="addUser2" useGeneratedKeys="true" keyProperty="no">
+        insert into usr(USR_NM, PASSWORD)
+        values (#{userName}, #{passWord})
+
+    </insert>
+</mapper>
